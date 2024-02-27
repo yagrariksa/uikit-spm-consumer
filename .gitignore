@@ -1,0 +1,24 @@
+.DS_Store
+Pods
+b.xcworkspace/xcuserdata/
+b.xcodeproj/xcuserdata/
+b.xcodeproj/project.xcworkspace/xcuserdata/
+R.generated.swift
+fastlane/README.md
+fastlane/report.xml
+Podfile.lock
+
+# Build Directory
+Build
+
+## Mockingbird
+# Generated
+*.generated.swift
+
+# Binaries
+Pods/MockingbirdFramework/mockingbird/bin/
+
+# Caches
+**/*.xcodeproj/MockingbirdCache/
+
+xcodebuild.log

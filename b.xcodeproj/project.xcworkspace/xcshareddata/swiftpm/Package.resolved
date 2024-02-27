@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "uikit-spm-dummy",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yagrariksa/uikit-spm-dummy",
+      "state" : {
+        "branch" : "1-add-spm-availability",
+        "revision" : "c3f1834a528d2223d140da6e4b5aa008e1a67dc5"
+      }
+    }
+  ],
+  "version" : 2
+}

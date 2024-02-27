@@ -15,6 +15,7 @@
 		404A4D912B8C4CE8007EBCCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404A4D8F2B8C4CE8007EBCCE /* LaunchScreen.storyboard */; };
 		404A4D9A2B8C4F17007EBCCE /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404A4D992B8C4F17007EBCCE /* DummyViewController.swift */; };
 		404A4D9C2B8C4FED007EBCCE /* DummyView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 404A4D9B2B8C4FED007EBCCE /* DummyView.storyboard */; };
+		40C9BC9C2B8DAED000163B86 /* a in Frameworks */ = {isa = PBXBuildFile; productRef = 40C9BC9B2B8DAED000163B86 /* a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40C9BC9C2B8DAED000163B86 /* a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +48,7 @@
 			children = (
 				404A4D832B8C4CE7007EBCCE /* b */,
 				404A4D822B8C4CE7007EBCCE /* Products */,
+				40C9BC9A2B8DAED000163B86 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +84,13 @@
 			path = DummyView;
 			sourceTree = "<group>";
 		};
+		40C9BC9A2B8DAED000163B86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -95,8 +105,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				40FB34BB2B8DA5ED00A8130D /* PBXTargetDependency */,
 			);
 			name = b;
+			packageProductDependencies = (
+				40C9BC9B2B8DAED000163B86 /* a */,
+			);
 			productName = b;
 			productReference = 404A4D812B8C4CE7007EBCCE /* b.app */;
 			productType = "com.apple.product-type.application";
@@ -125,6 +139,9 @@
 				Base,
 			);
 			mainGroup = 404A4D782B8C4CE7007EBCCE;
+			packageReferences = (
+				40FB34B32B8D99EA00A8130D /* XCRemoteSwiftPackageReference "uikit-spm-dummy" */,
+			);
 			productRefGroup = 404A4D822B8C4CE7007EBCCE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,6 +178,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		40FB34BB2B8DA5ED00A8130D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 40FB34BA2B8DA5ED00A8130D /* a */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		404A4D8A2B8C4CE7007EBCCE /* Main.storyboard */ = {
@@ -374,6 +398,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		40FB34B32B8D99EA00A8130D /* XCRemoteSwiftPackageReference "uikit-spm-dummy" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/yagrariksa/uikit-spm-dummy";
+			requirement = {
+				branch = "1-add-spm-availability";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		40C9BC9B2B8DAED000163B86 /* a */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40FB34B32B8D99EA00A8130D /* XCRemoteSwiftPackageReference "uikit-spm-dummy" */;
+			productName = a;
+		};
+		40FB34BA2B8DA5ED00A8130D /* a */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 40FB34B32B8D99EA00A8130D /* XCRemoteSwiftPackageReference "uikit-spm-dummy" */;
+			productName = a;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 404A4D792B8C4CE7007EBCCE /* Project object */;
 }

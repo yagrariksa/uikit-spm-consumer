@@ -10,6 +10,20 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
+    override init() {
+        super.init()
+        
+        let bundleNames = ["a_a"]
+        bundleNames.forEach { bundleName in
+            guard
+                let bundleURL = Bundle.main.url(forResource: bundleName, withExtension: "bundle"),
+                let bundle = Bundle(url: bundleURL) else {
+                print("not found \(bundleName)")
+                return
+            }
+            bundle.load()
+        }
+    }
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
